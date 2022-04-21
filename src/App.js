@@ -1,7 +1,7 @@
 // App.js
 
 import React, { Component } from "react";
-import Overview from "./components/Overview";
+import applicant from "./Components/applicant";
 import uniqid from "uniqid";
 
 class App extends Component {
@@ -43,18 +43,32 @@ class App extends Component {
     return (
       <div>
         <form onSubmit={this.onSubmitTask}>
-          <label htmlFor="taskInput">Enter task</label>
+          <label htmlFor="nameInput">Full Name</label>
           <input 
             onChange={this.handleChange} 
             value={task.text}
             type="text" 
-            id="taskInput"
+            id="nameInput"
+          />
+          <label htmlFor="emailInput">Email</label>
+          <input 
+            onChange={this.handleChange} 
+            value={task.text}
+            type="email" 
+            id="emailInput"
+          />
+          <label htmlFor="phoneInput">Phone Number</label>
+          <input 
+            onChange={this.handleChange} 
+            value={task.text}
+            type="number" 
+            id="phoneInput"
           />
           <button type="submit">
-            Add Task
+            Submit
           </button>
         </form>
-        <Overview tasks={tasks} />
+        <applicant tasks={tasks} />
       </div>
     );
   }
