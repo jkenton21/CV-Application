@@ -1,4 +1,5 @@
-// Applicant.js
+// Main.js
+/* Main.js component renders the CV application page format and styling */
 
 import React from "react";
 import GeneralSection from './GeneralSection'
@@ -24,10 +25,10 @@ class Main extends React.Component {
           <GeneralSection />
           <ExperienceSection />
           <EducationSection />
-          <CardFooter />
+          <CardFooter onSubmitBtn={handleSubmit} isSubmitted={isSubmitted} />
         </Card>
       </MainContainer>
-    )
+    );
   }
 }
 

@@ -1,3 +1,6 @@
+// CardFooter.js
+/* CardFooter component contains submit/edit buttons for the CV */
+
 import React from 'react'
 
 class CardFooter extends React.Component {
