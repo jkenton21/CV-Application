@@ -6,27 +6,33 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Nunito", serif;
 }
+
 .App {
   margin: 20px auto;
-  max-width: 90%;
+  max-width: 95%;
   font-family: sans-serif;
 }
+
 .Header {
   margin-bottom: 10px;
   font-weight: 700;
   text-align: center;
 }
+
 .General {
   margin: auto;
 }
+
 form {
-  background-color: #b6af6d;
-  border-radius: 0px;
+  background-color: lightblue;
+  border-radius: 5px;
   max-width: 90%;
   margin: 20px auto;
   padding: 20px 20px 10px 20px;
 }
+
 input,
 textarea {
   display: block;
@@ -35,16 +41,20 @@ textarea {
   height: 40px;
   font-size: 1em;
 }
+
 button {
   border-radius: 5px;
   padding: 5px;
   font-size: 1em;
   text-align: center;
+  margin: 10px;
 }
+
 .full-name {
   font-size: 2em;
   font-weight: 400;
 }
+
 .view {
   max-width: 80%;
   margin: auto;
@@ -52,12 +62,14 @@ button {
   border-radius: 5px;
   padding: 20px;
 }
+
 .btn-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
+
 .view-btn-container {
   display: flex;
   flex-direction: column;
@@ -65,11 +77,13 @@ button {
   align-items: center;
   margin-top: 20px;
 }
+
 .general-view {
   margin-bottom: 10px;
   text-align: center;
   border-bottom: 1px solid;
 }
+
 .education-view,
 .experience-view {
   display: flex;
@@ -77,14 +91,17 @@ button {
   max-width: 100%;
   margin: 10px auto;
 }
+
 .other-personal {
   margin-bottom: 2px;
 }
+
 .degree,
 .title {
   font-weight: 700;
   font-size: 1.2em;
 }
+
 .dates {
   font-weight: 300;
 }
